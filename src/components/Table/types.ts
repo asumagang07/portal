@@ -1,3 +1,3 @@
-export interface TTableProps {
-  layout?: "list" | "card";
+export interface TableProps {
+  className: string;
 }

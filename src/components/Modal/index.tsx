@@ -22,7 +22,7 @@ const Modal: FC<TModalProps> = (props) => {
                 "150ms cubic-bezier(0.16, 1, 0.3, 1) 0s 1 normal none running k-eyOShd",
             }}
           />
-          <Dialog.Content className="DialogContent bg-white shadow-2xl h-screen fixed top-0 left-[5rem] w-96 p-4">
+          <Dialog.Content className="DialogContent bg-white shadow-2xl h-screen fixed top-0 left-[5rem] w-[30rem] p-4 border-r">
             <Dialog.Title className="DialogTitle pb-4">{title}</Dialog.Title>
             {/* <Dialog.Description className="DialogDescription">
               Make changes to your profile here. Click save when you're done.

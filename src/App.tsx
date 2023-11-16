@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="relative h-screen w-screen bg-white">
       <Sidebar />
-      <div style={{ width: "calc(100vw - 5rem)" }} className="h-full p-3 ml-20">
+      <div style={{ width: "calc(100vw - 4rem)" }} className="h-full p-3 ml-16">
         <Dashboard />
       </div>
     </div>
