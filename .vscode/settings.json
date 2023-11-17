@@ -1,10 +1,10 @@
-{
-  "workbench.colorCustomizations": {
-    "activityBar.background": "#5f5f5e",
-    "titleBar.activeBackground": "#f6fdf9",
-    "titleBar.activeForeground": "#b2b1c7",
-    "activityBar.foreground": "#16b8d1",
-    "activityBar.inactiveForeground": "#f4f4f4",
-    "tab.activeBackground": "#16b8d16e"
-  }
-}
+// {
+//   "workbench.colorCustomizations": {
+//     "activityBar.background": "#5f5f5e",
+//     "titleBar.activeBackground": "#f6fdf9",
+//     "titleBar.activeForeground": "#b2b1c7",
+//     "activityBar.foreground": "#16b8d1",
+//     "activityBar.inactiveForeground": "#f4f4f4",
+//     "tab.activeBackground": "#16b8d16e"
+//   }
+// }

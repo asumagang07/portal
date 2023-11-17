@@ -15,7 +15,7 @@ const Table = React.forwardRef<
     <div className="w-full border p-2 rounded-md">
       <table
         className={cn(
-          "w-full text-sm text-left rtl:text-right border-separate border-spacing-x-0 border-spacing-y-2 bg-gray-50 p-2",
+          "w-full text-sm text-left rtl:text-right border-separate border-spacing-x-0 border-spacing-y-2 bg-gray-100 p-2",
           className
         )}
         ref={ref}
