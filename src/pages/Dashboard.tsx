@@ -79,10 +79,7 @@ const Dashboard = () => {
           </Table.Header>
           <Table.Body>
             {data.map((i) => (
-              <Table.Row
-                key={i.first_name}
-                className="hover:bg-primary-50 hover:bg-opacity-50"
-              >
+              <Table.Row key={i.first_name} className="hover:bg-primary-50">
                 <Table.Cell>
                   <Checkbox />
                 </Table.Cell>

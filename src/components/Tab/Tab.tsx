@@ -12,14 +12,14 @@ const Tab: FC<TTabProps> = (props) => {
     <div
       onClick={onClick}
       className={cn(
-        "h-8 w-full flex items-center gap-2 cursor-pointer",
-        sidebar_expanded ? "justify-center" : "justify-start",
-        { ["text-blue-500"]: active },
+        "h-10 w-full flex items-center gap-2 cursor-pointer hover:bg-purple-950 hover:bg-opacity-60",
+        sidebar_expanded ? "justify-start px-4" : "justify-center",
+        { "text-white bg-purple-950 backdrop-blur-sm  bg-opacity-60": active },
         className
       )}
     >
       {icon}
-      {!sidebar_expanded && <p>{label}</p>}
+      {sidebar_expanded && <p>{label}</p>}
       {/* {active === true && (
         <div
           className={cn(" absolute left-[-50px] text-white", {

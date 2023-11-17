@@ -5,10 +5,14 @@ import Sidebar from "./components/Sidebar";
 import { SideBarContext } from "./contexts/SideBarContext/SideBarProvider";
 import cn from "classnames";
 import { MdCardMembership, MdMenu } from "react-icons/md";
+import {
+  TbLayoutSidebarLeftCollapse,
+  TbLayoutSidebarRightCollapse,
+} from "react-icons/tb";
 import { FaUsers } from "react-icons/fa6";
 import { IoBarbellSharp } from "react-icons/io5";
 import Tab from "./components/Tab/Tab";
-import { TTabProps } from "./components";
+import { Navbar, TTabProps } from "./components";
 
 const App = () => {
   const { sidebar_expanded, setSidebarExpanded } = useContext(SideBarContext);
@@ -16,7 +20,11 @@ const App = () => {
 
   const sidebardata: TTabProps[] = [
     {
-      icon: <MdMenu size={20} />,
+      icon: sidebar_expanded ? (
+        <TbLayoutSidebarLeftCollapse size={20} />
+      ) : (
+        <TbLayoutSidebarRightCollapse size={20} />
+      ),
       label: "Menu",
       onClick: () => {
         setSidebarExpanded(!sidebar_expanded);
@@ -53,14 +61,15 @@ const App = () => {
       <div
         style={{
           width: sidebar_expanded
-            ? "calc(100vw - 4rem)"
-            : "calc(100vw - 15rem)",
+            ? "calc(100vw - 15rem)"
+            : "calc(100vw - 4rem)",
         }}
         className={cn(
-          "ease-in-out duration-200 h-full p-3",
-          sidebar_expanded ? "ml-16" : "ml-60"
+          "bg-gray-50 ease-in-out duration-200 h-full",
+          sidebar_expanded ? "ml-60" : "ml-16"
         )}
       >
+        <Navbar />
         <Dashboard />
       </div>
     </div>

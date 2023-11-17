@@ -11,7 +11,7 @@ const Row = React.forwardRef<
   return (
     <StyledRow
       className={cn(
-        "bg-white border border-gray-200 hover:border-blue-500 hover:shadow-lg hover:cursor-pointer my-1",
+        "bg-white border border-gray-200 hover:shadow-lg hover:cursor-pointer my-1 group hover:translate-x-2 transition duration-300 ease-in-out",
         className
       )}
       ref={ref}

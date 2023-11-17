@@ -16,7 +16,11 @@ const Cell = React.forwardRef<
   return createElement(
     cellType,
     {
-      className: cn(cellClass, "px-4 py-2 capitalize", className),
+      className: cn(
+        cellClass,
+        "px-4 py-3  capitalize group-hover:first-of-type:border-l-4 group-hover:first-of-type:border-black ",
+        className
+      ),
       ref: ref,
       ...other,
     },

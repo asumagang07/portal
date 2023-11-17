@@ -22,7 +22,7 @@ const Modal: FC<TModalProps> = (props) => {
           <Dialog.Overlay
             className={cn(
               "DialogOverlay  fixed inset-0 ",
-              sidebar_expanded ? "left-[4rem]" : "left-[15rem]"
+              sidebar_expanded ? "left-[15rem]" : "left-[4rem]"
             )}
             style={{
               animation:
@@ -33,7 +33,7 @@ const Modal: FC<TModalProps> = (props) => {
           <Dialog.Content
             className={cn(
               "DialogContent bg-white shadow-2xl h-screen fixed top-0  w-[30rem] p-4 border-r",
-              sidebar_expanded ? "left-[4rem]" : "left-[15rem]"
+              sidebar_expanded ? "left-[15rem]" : "left-[4rem]"
             )}
           >
             <Dialog.Title className="DialogTitle pb-4">{title}</Dialog.Title>
